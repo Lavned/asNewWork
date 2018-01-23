@@ -1,0 +1,4 @@
+include ':app', ':JYShop', ':library', ':changeTest'
+project(':JYShop').projectDir = new File('JYShop')
+project(':library').projectDir = new File('library')
+project(':changeTest').projectDir = new File('changeDemo')

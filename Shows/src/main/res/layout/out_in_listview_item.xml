@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/out_in_icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:src="@mipmap/dot" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/out_in_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="只能电动车"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/out_in_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="只能电动自行车"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/out_in_money_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="10sp"
+                android:text="2012年8月12日" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1.7"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/ex_shengyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="18dp"
+                android:text="剩余1060"
+                android:visibility="invisible"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/out_in_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5.0"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="right"
+                android:textColor="#f20606"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#50000000"/>
+
+
+</LinearLayout>

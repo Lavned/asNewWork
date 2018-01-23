@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/freetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072bb">
+        <ImageView
+            android:id="@+id/frees_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:src="@mipmap/icon_btn_back"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:id="@+id/free_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="免费声明"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/free_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="您可享有法律规定下首媒秀不得排除或限制的担保、条件和条款。除了这些不可排除的担保、条件和条款，本软件、首媒秀在线服务和第三方在线服务都按“现状”提供。除了这些不可排除的担保、条件和条款，首媒秀及其供应商不做出任何担保、条件、陈述、保证或条款（无论是明示的还是暗示的，也无论是依据成文法、普通法、惯例、常例，还是其他任何原因），包括但不限于性能、结果、安全、不侵权、适销性、完整性、可不受干扰使用、质量满意以及适用于任何特殊用途。本免除担保声明在某些国家可能无效。您可能享有法律规定下不得放弃或免除的担保权利。\n首媒秀不在适用法律允许的范围外限制您所享有的担保权利。"
+        android:layout_below="@+id/freetitle"
+        android:layout_margin="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/freetitle"
+        android:id="@+id/version_lin"
+        android:layout_marginLeft="10dp"
+        android:visibility="visible"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/version_code_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textColor="#d20808"
+            android:textSize="22sp"
+            android:text="版本信息：当前版本V2.0"/>
+
+            <TextView
+                android:id="@+id/downloadurl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ff0000"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:drawableLeft="@mipmap/gonggao"
+                android:drawablePadding="10dp"
+                android:text="点我下载最新版！"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="版本更新会给您发推送的哦！"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/abouttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072bb">
+        <ImageView
+            android:id="@+id/about_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="2dp"
+            android:src="@mipmap/icon_btn_back"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="关于首媒秀"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aboutsetting"
+        android:layout_below="@+id/abouttitle">
+
+    <ImageView
+        android:id="@+id/showsphoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/shoumeixiu"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/showmeixiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首媒秀Show"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:textColor="#0024ff"
+        android:layout_below="@+id/showsphoto"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/showmeixiu"
+        android:textColor="#0024ff"
+        android:id="@+id/textView2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关于安全"
+        android:background="@drawable/iconback"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/textView2"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/about_security" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户协议"
+        android:background="@drawable/iconback"
+        android:gravity="center"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:layout_below="@+id/about_security"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/about_http" />
+        <TextView
+            android:id="@+id/about_eveloper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发者信息"
+            android:background="@drawable/iconback"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/about_http"
+            android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+</RelativeLayout>

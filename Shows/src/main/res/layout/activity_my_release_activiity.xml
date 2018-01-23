@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/hhhh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#30B0EE"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:id="@+id/my_back"
+            android:src="@mipmap/icon_btn_back" />
+
+        <TextView
+            android:id="@+id/type_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="我的发布"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:src="@mipmap/release"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wawa_weiqu"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/weiqu"
+        android:drawablePadding="5dp"
+        android:text="哎呦出错了！"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <ListView
+        android:id="@+id/myrelease_lv"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hhhh"
+        android:layout_marginTop="5dp"></ListView>
+</RelativeLayout>

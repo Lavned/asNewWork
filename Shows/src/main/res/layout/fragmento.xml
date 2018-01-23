@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#30B0EE"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/type_title"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="免费发布圈"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:src="@mipmap/release"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/release_lv"></ListView>
+    <TextView
+        android:id="@+id/wawa_weiqu"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/weiqu"
+        android:drawablePadding="5dp"
+        android:text="哎呦出错了！"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

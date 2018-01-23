@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/out_moneytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072bb">
+        <ImageView
+            android:id="@+id/out_money_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:src="@mipmap/icon_btn_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/out_in_commont_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="收入明细"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/deleteout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空"
+            android:layout_alignParentRight="true"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/out_moneytitle"
+        android:layout_marginTop="5dp"
+        android:id="@+id/outmoney_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</RelativeLayout>

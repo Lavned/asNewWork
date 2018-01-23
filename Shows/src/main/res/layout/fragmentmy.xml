@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ee_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/me"
+        style="@style/page_title"
+        android:background="@mipmap/titlebackground"
+        android:layout_width="fill_parent" >
+
+        <ImageButton
+            android:id="@+id/member"
+            style="@style/button_style"
+            android:layout_width="48dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:visibility="invisible"
+            android:src="@mipmap/member" />
+
+        <TextView
+            style="@style/page_title_str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="用户中心" />
+
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_below="@+id/me"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:id="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/main_topbg">
+
+                <com.com.shows.utils.CircleImageView
+                    android:id="@+id/photo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:contentDescription="@null"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/wawatwo"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/photo"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="未登录"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#80000000"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_below="@+id/tou"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <ListView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp" />
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>

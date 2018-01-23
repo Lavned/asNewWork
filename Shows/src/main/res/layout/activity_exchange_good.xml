@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#10000000"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2FB1EB">
+
+        <ImageView
+            android:id="@+id/exchangegood_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/icon_btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="兑换详情"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ddddd"
+        android:layout_below="@+id/res"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollview_good_detail"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/good_viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:id="@+id/dotLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        android:orientation="horizontal" />
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="#fff"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_good_name"
+                        android:layout_width="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textColor="#000000"
+                        android:text="小台灯"
+                        android:textSize="16sp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_good_price"
+                        android:layout_width="wrap_content"
+                        android:textColor="#ff010a"
+                        android:text="￥0.00"
+                        android:textSize="21sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_alignParentRight="true" />
+
+                    <TextView
+                        android:id="@+id/tv_good_num"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#80000000"
+                        android:text="剩余21件"
+                        android:layout_below="@+id/tv_good_name"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/tv_good_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#80000000"
+                        android:text="邮费：包邮"
+                        android:layout_below="@+id/tv_good_price"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/info_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textColor="#000"
+                        android:text="商品详情"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@mipmap/diandian" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_type_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_margin="5dp"
+                        android:gravity="top"
+                        android:textColor="#fff"
+                        android:background="#ff0004"
+                        android:text="此商品为限量抢购商品，欢迎抢购!"
+                        android:textSize="16sp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/good_shoucang"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:background="@mipmap/shoucangweixuan"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_good_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="商品简介"
+                    android:textSize="15sp" />
+                </LinearLayout>
+                <com.shows.view.MyGridView
+                    android:id="@+id/images_urlsss"
+                    android:layout_width="match_parent"
+                    android:numColumns="1"
+                    android:verticalSpacing="5dp"
+                    android:columnWidth="10dp"
+                    android:stretchMode="columnWidth"
+                    android:paddingTop="2dp"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_good_gooder_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textColor="#000"
+                        android:text="商家介绍"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@mipmap/diandian" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="秀秀自营"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textColor="#000"
+                        android:text="兑换须知"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@mipmap/diandian" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="【注意事项】：\n 1.概不退换。 \n 2.收货地址需详细填写，以免无法投递到人。 \n 3.发货时间为兑换之日起1-2个工作日（周末及法定节假日不发货）。\n 4.发货期间请保持手机联系畅通，若投递成功后三日内未及时领取，商品将会退回且再次发货运费自理。\n 5.商城售后 0931-7211000"/>
+                </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:id="@+id/tv_good_buy_code"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="#000"
+                    android:text="购买记录"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@mipmap/diandian" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:text="更多>"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/goos_exchage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="立即兑换"
+                    android:background="#F39800"
+                    android:textColor="#fff"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

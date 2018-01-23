@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    	<declare-styleable name="com.baidu.mobads.AdView">
+		<attr name="adSize" format="integer" />
+		<attr name="adId" format="string" />
+	</declare-styleable> 
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="progress_unreached_color" format="color" />
+        <attr name="progress_reached_color" format="color" />
+        <attr name="progress_reached_bar_height" format="dimension" />
+        <attr name="progress_unreached_bar_height" format="dimension" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_offset" format="dimension" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircularImage">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="swipelistviewstyle">
+        <attr name="right_width" format="dimension"></attr>
+    </declare-styleable>
+
+
+    <!--AnswerLayout相关-->
+    <!--删除按钮图像-->
+    <attr name="deleteBtnSrc" format="reference"/>
+    <!--汉字格边框颜色-->
+    <attr name="hanziBorderColor" format="color"/>
+    <!--汉字格边框的粗度-->
+    <attr name="hanziBorderStrokeWidth" format="float"/>
+    <!--汉字格的个数-->
+    <attr name="hanziTestNum" format="integer"/>
+    <!--文字的颜色-->
+    <attr name="hanziTextColor" format="color"/>
+    <!--文字大小-->
+    <attr name="hanziTextSize" format="dimension"/>
+    <declare-styleable name="AnswerLayout">
+        <attr name="deleteBtnSrc"/>
+        <attr name="hanziBorderColor"/>
+        <attr name="hanziBorderStrokeWidth"/>
+        <attr name="hanziTestNum"/>
+        <attr name="hanziTextColor"/>
+        <attr name="hanziTextSize"/>
+    </declare-styleable>
+    <!--HanZiView相关-->
+    <!--左右宽度留白-->
+    <attr name="borderWidthSize" format="dimension"/>
+    <!--上下高度留白-->
+    <attr name="borderHeightSize" format="dimension"/>
+    <!--旋转的度数-->
+    <attr name="rotateSize" format="integer"/>
+    <!--扭曲的系数-->
+    <attr name="smudgeCoefficieng" format="float"/>
+    <!--文字的颜色-->
+    <attr name="textColor" format="color"/>
+    <!--文字大小-->
+    <attr name="textSize" format="dimension"/>
+    <declare-styleable name="HanZiView">
+        <attr name="borderWidthSize"/>
+        <attr name="borderHeightSize"/>
+        <attr name="rotateSize"/>
+        <attr name="smudgeCoefficieng"/>
+        <attr name="textColor"/>
+        <attr name="textSize"/>
+    </declare-styleable>
+    <!--CodeView相关-->
+    <!--扰乱项的个数-->
+    <attr name="disturbSize" format="integer"/>
+    <!--干扰项文字的大小-->
+    <attr name="disturbTextSize" format="dimension"/>
+    <!--干扰项文字颜色-->
+    <attr name="disturbTextColor" format="color"/>
+    <!--验证码文字大小-->
+    <attr name="codeTextSize" format="dimension"/>
+    <!--验证码文字颜色-->
+    <attr name="codeTextColor" format="color"/>
+    <!--画布旋转的度数-->
+    <attr name="rotate" format="integer"/>
+    <declare-styleable name="CodeView">
+        <attr name="disturbSize"/>
+        <attr name="disturbTextSize"/>
+        <attr name="disturbTextColor"/>
+        <attr name="codeTextSize"/>
+        <attr name="codeTextColor"/>
+        <attr name="rotate"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/cf_add_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.com.shows.utils.CircleImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_margin="10dp"
+                android:id="@+id/cf_add_head"
+                android:layout_gravity="center"
+                android:src="@mipmap/wawatwo"/>
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/cf_add_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:text="名字：暖暖"/>
+                <TextView
+                    android:id="@+id/cf_add_buy_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="本次购买份数：5份"/>
+                <TextView
+                    android:id="@+id/cf_add_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff0000"
+                    android:textSize="12sp"
+                    android:text="号码：10024101"/>
+                <TextView
+                    android:id="@+id/cf_add_stime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#80000000"
+                    android:textSize="12sp"
+                    android:text="号码：10024101"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

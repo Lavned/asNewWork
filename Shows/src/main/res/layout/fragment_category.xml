@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#30B0EE"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/category_left"
+            android:layout_width="65dp"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@id/category_left"
+            android:background="@color/white" >
+
+            <GridView
+                android:id="@+id/category_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:numColumns="2" />
+
+            <LinearLayout
+                android:id="@+id/other_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <RelativeLayout
+                    android:id="@+id/ketchen_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/hdd"
+                        android:text="ffff"
+                        android:textColor="#000"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/safety_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/hdd"
+                        android:text="vvv"
+                        android:textColor="#00ffff"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relaxation_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:drawablePadding="5dp"
+                        android:drawableTop="@drawable/hdd"
+                        android:text="ccc"
+                        android:textColor="#585858"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

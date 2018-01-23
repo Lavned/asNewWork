@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#30000000"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/settitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072bb">
+        <ImageView
+            android:id="@+id/about_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:src="@mipmap/icon_btn_back"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="意见反馈"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/shuoming"
+        android:layout_below="@+id/settitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+        android:text="您的任何意见或者建议都是我们前进的阶梯"/>
+
+    <LinearLayout
+        android:id="@+id/edityijian"
+        android:layout_below="@+id/shuoming"
+        android:layout_width="match_parent"
+        android:background="@drawable/searchback"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="200dp">
+        <EditText
+            android:id="@+id/edit_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="5dp"
+            android:hint="请输入您的意见或建议"
+            android:gravity="top"/>
+    </LinearLayout>
+<Button
+    android:id="@+id/submit_freeback"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="提 交"
+    android:textSize="16sp"
+    android:textColor="#fff"
+    android:layout_below="@+id/edityijian"
+    android:layout_margin="10dp"
+    android:background="@drawable/submitback"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit_freeback"
+        android:layout_margin="15dp"
+        android:textColor="#f50202"
+        android:text="首媒秀交流群：477208408"/>
+
+
+</RelativeLayout>

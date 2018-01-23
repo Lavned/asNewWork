@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2FB1EB">
+
+        <ImageView
+            android:id="@+id/gonggao_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/icon_btn_back" />
+
+        <TextView
+            android:id="@+id/xiuxiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="公益信息"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/gonggaolin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/gonggao_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="公交六公司公告" />
+
+        <TextView
+            android:id="@+id/gonggao_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="西固康乐路修路因雨水改造，近期维修，请市民们注意调整乘车计划！K102路、50路公交车路线调整为化工厂、寺儿沟桥。给您的出行造成的不便。敬请谅解!" />
+        />
+        <TextView
+            android:id="@+id/gonggao_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="2016年8月8日" />
+
+        <TextView
+            android:id="@+id/gonggao_write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="#f90202"
+            android:textSize="18sp"
+            android:text="西固政府宣" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/gongyilin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/re"
+        android:orientation="vertical"
+        android:visibility="visible">
+    <WebView
+        android:id="@+id/gongyi_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/aixinjuanzhu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xiuxiunoclick"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:textColor="#fff"
+            android:text="爱心捐助一元"/>
+    </RelativeLayout>
+</RelativeLayout>

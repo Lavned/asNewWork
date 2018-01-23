@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/moneytitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072bb">
+        <ImageView
+            android:id="@+id/money_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:src="@mipmap/icon_btn_back"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="我的钱包"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/moneytitle"
+        android:orientation="vertical"
+        android:background="@drawable/qianbaobeijing"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout2">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/toumingyuan"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/money" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额"
+                android:layout_marginLeft="10dp"
+                android:textSize="22sp" />
+            </LinearLayout>
+                <TextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#d70202"
+                    android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/money_back"
+            android:layout_weight="2">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_margin="8dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/today"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                    <TextView
+                        android:id="@+id/jinrishouyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今日收益"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="wrap_content"
+                    android:background="#50000000"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/yestoday"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                    <TextView
+                        android:id="@+id/zuorishouyi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="昨日收益"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#50000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/life_recharge"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/giveyoumoney"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="给亲送红包"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="wrap_content"
+                    android:background="#50000000"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/recharge"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/chongzhi"
+                        android:gravity="center"
+
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机充值"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#50000000"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:layout_height="0dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/getmoney_info"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/shouru"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收入明细"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="wrap_content"
+                    android:background="#50000000"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/out_money_info"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/zhichu"
+                        android:gravity="center"
+
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支出明细"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical|center_horizontal" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

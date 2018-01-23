@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:id="@+id/linback"
+    android:background="@mipmap/qingbeijing">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--上部分-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout">
+                <TextView
+                    android:id="@+id/wea_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:textSize="25sp"
+                   android:drawableLeft="@mipmap/location"
+                    android:drawablePadding="5dp"
+                    android:textColor="#fff"
+                    android:text="兰州"/>
+
+                <TextView
+                    android:id="@+id/wea_week_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:text="星期五"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="2016年4-6"
+                    android:textColor="#fff"
+                    android:id="@+id/wea_datatime_current" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/yuande"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:visibility="visible"
+                android:background="@drawable/yuanback"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/wea_info_icon_current"
+                    android:background="@mipmap/dayu"/>
+                <TextView
+                    android:id="@+id/wea_indo_temp_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="60sp"
+                    android:layout_margin="10dp"
+                    android:text="20℃"/>
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wea_info"
+                android:layout_width="match_parent"
+                android:layout_marginTop="80dp"
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:layout_height="0dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="3">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@mipmap/smallduoyun"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/wea_info_detail_current"
+                    android:text="多云"/>
+                <TextView
+                    android:id="@+id/wea_info_shidu_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@mipmap/wendu"
+                    android:drawablePadding="5dp"
+                    android:text="湿度  60%"/>
+                <TextView
+                    android:id="@+id/wea_info_fengx_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@mipmap/fengxiang"
+                    android:drawablePadding="5dp"
+                    android:text="风向 西北风"/>
+                <TextView
+                    android:id="@+id/wea_info_aqi_current"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_margin="5dp"
+                    android:drawableLeft="@mipmap/kongqizhishu"
+                    android:drawablePadding="5dp"
+                    android:text="空气质量 优良"/>
+
+            </LinearLayout>
+            <!--shangbufen-->
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/wea_chart"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_height="200dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#20000000"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/wea_week_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="周一" />
+                    <TextView
+                        android:id="@+id/wea_detail_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="多云" />
+
+                    <ImageView
+                        android:id="@+id/wea_icon_01"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/dabaoyu" />
+
+                    <TextView
+                        android:id="@+id/wea_temp_01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="22°" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/wea_week_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="周一" />
+                    <TextView
+                        android:id="@+id/wea_detail_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="多云" />
+
+                    <ImageView
+                        android:id="@+id/wea_icon_02"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/dabaoyu" />
+
+                    <TextView
+                        android:id="@+id/wea_temp_02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="22°" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView android:id="@+id/wea_week_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="周一" />
+                    <TextView
+                        android:id="@+id/wea_detail_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="多云" />
+
+                    <ImageView
+                        android:id="@+id/wea_icon_03"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/dabaoyu" />
+
+                    <TextView
+                        android:id="@+id/wea_temp_03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="22°" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:id="@+id/wea_week_04"
+                        android:text="周一" />
+
+                    <TextView
+                        android:id="@+id/wea_detail_04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="多云" />
+
+                    <ImageView
+                        android:id="@+id/wea_icon_04"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/dabaoyu" />
+
+                    <TextView
+                        android:id="@+id/wea_temp_04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="22°" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/wea_week_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="周一" />
+
+                    <TextView
+                        android:id="@+id/wea_detail_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="多云" />
+
+                    <ImageView
+                        android:id="@+id/wea_icon_05"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/dabaoyu" />
+
+                    <TextView
+                        android:id="@+id/wea_temp_05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="22°" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/wea_week_06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="周一" />
+                    <TextView
+                        android:id="@+id/wea_detail_06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="多云" />
+
+                    <ImageView
+                        android:id="@+id/wea_icon_06"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:src="@mipmap/dabaoyu" />
+
+                    <TextView
+                        android:id="@+id/wea_temp_06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:textColor="#fff"
+                        android:text="22°" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@mipmap/ganmaozhishu" />
+
+                        <TextView
+                            android:id="@+id/index_ganmao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:textColor="#fff"
+                            android:text="感冒指数" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@mipmap/chuanyi" />
+
+                        <TextView
+                            android:id="@+id/index_chuanyi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:textColor="#fff"
+                            android:text="穿衣指数" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@mipmap/xiche" />
+
+                        <TextView
+                            android:id="@+id/index_xiche"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:textColor="#fff"
+                            android:text="洗车指数" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@mipmap/lvyou" />
+
+                        <TextView
+                            android:id="@+id/index_lvyou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:textColor="#fff"
+                            android:text="旅游指数" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@mipmap/liangshai" />
+
+                        <TextView
+                            android:id="@+id/index_liangshai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:textColor="#fff"
+                            android:text="晾晒指数" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@mipmap/shudhidu" />
+
+                        <TextView
+                            android:id="@+id/index_ziwaixian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:textColor="#fff"
+                            android:text="紫外线指数" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

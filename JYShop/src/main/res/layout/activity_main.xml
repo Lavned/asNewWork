@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/xxx"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_marginTop="40dp"
+        android:layout_above="@+id/gv_right"
+        android:layout_marginBottom="-20dp"
+         />
+
+    <!--<com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/refreshLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recyclerview"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:overScrollMode="never"-->
+            <!--android:background="#fff" />-->
+    <!--</com.scwang.smartrefresh.layout.SmartRefreshLayout>-->
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_width="match_parent"
+        android:id="@+id/gv_right"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:scrollbars="none">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/end"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <include
+            layout="@layout/down_endlayout"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

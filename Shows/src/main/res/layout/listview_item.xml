@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/listback"/>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/item_left"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_icons"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@mipmap/stu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="这是一条信息"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:singleLine="true"
+            android:id="@+id/text_title" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginTop="15dp"
+            android:text="这条信息主要显示的是这样的那样的东西这条信息主要显示的是这样的那样的东西"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:id="@+id/text_detail" />
+            </LinearLayout>
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_right"
+        android:layout_width="wrap_content"
+        android:background="#696969"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/item_right_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="删除"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:textColor="#FFFAF0" />
+    </RelativeLayout>
+</LinearLayout>

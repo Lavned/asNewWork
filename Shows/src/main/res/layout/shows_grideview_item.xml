@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:id="@+id/layouts"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+>
+    
+    
+     <ImageView
+        android:id="@+id/re_itemImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+         android:src="@mipmap/kele"
+         android:scaleType="fitXY"
+        android:layout_centerHorizontal="true" >
+    </ImageView>
+
+</LinearLayout>

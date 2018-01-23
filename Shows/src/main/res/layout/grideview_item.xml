@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.shows.view.RoundCornerImageView
+            android:id="@+id/itemImage"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/w_feedback"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true" >
+        </com.shows.view.RoundCornerImageView>
+
+        <TextView
+            android:id="@+id/itemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="TextView01"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/itemImage" />
+        <ImageView
+            android:id="@+id/itemupdate"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/hdd"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

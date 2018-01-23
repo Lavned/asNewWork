@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/item_left"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/lim_image_icons"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/stu" />
+            <ImageView
+                android:id="@+id/lim_image_icons_001"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                android:src="@mipmap/qiangguang" />
+            <ImageView
+                android:id="@+id/lim_image_icons_002"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                android:src="@mipmap/mashangqiang" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lim_text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:text="这是一条信息"
+
+                android:textColor="#90000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lim_text_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="12dp"
+                android:singleLine="true"
+                android:text="当前进度20%"
+                android:visibility="visible"
+                android:textColor="#ff0000"
+                android:textSize="12sp" />
+
+            <ProgressBar
+                android:id="@+id/my_progress"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:max="100"
+                android:progress="20"
+                android:layout_alignParentBottom="true"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressDrawable="@drawable/progressbar_color"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lim_text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:text="立即夺宝"
+                android:padding="5dp"
+                android:background="@drawable/submitback"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/lim_text_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:visibility="visible"
+                android:text="总量：100\n剩余：55"
+                android:textColor="#ff0000"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#50000000" />
+</LinearLayout>

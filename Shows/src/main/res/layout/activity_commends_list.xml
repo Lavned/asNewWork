@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/commend_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0072bb">
+        <ImageView
+            android:id="@+id/commend_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="2dp"
+            android:src="@mipmap/icon_btn_back"
+            android:layout_centerVertical="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="评论列表"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/commend_title"
+        android:layout_marginBottom="45dp"
+        android:id="@+id/commend_listview"></ListView>
+
+
+    <TextView
+        android:id="@+id/wawa_weiqu"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/weiqu"
+        android:drawablePadding="5dp"
+        android:text="哎呦出错了！"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@drawable/searchback"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:paddingLeft="10dp"
+            android:id="@+id/comm_edit"
+            android:hint="评论一下"/>
+        <Button
+            android:id="@+id/commend_submit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="评论"/>
+    </LinearLayout>
+
+</RelativeLayout>

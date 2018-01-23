@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yixinke.shows">
+
+    <permission
+        android:name="com.yixinke.shows.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- Required -->
+    <uses-permission android:name="com.yixinke.shows.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 摄影机 -->
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.example.myapplication.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- 蓝牙分享所需的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="com.shows.view.HeiaiApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="landscape"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan">
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="T9MpyNWSEtP9Rhik8lgl9Rc0xeBwDOST" />
+        <!-- http://lbsyun.baidu.com/apiconsole/key -->
+
+        <activity android:name="com.com.shows.main.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InfoDetailsActivity" />
+        <activity android:name="com.com.shows.main.GuideActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name="com.shows.allactivty.LoginActivity" />
+        <activity android:name="com.shows.allactivty.RedigerActivity" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.shows.allactivty.AppSettingActivty" />
+        <activity android:name="com.shows.allactivty.HowGetMoneyActivty" />
+        <activity android:name="com.shows.allactivty.AboutSHowsActivity" />
+        <activity android:name="com.shows.allactivty.CommentActivity" />
+        <activity
+            android:name="com.shows.allactivty.WeWeatherActivity"
+            android:launchMode="singleTop" />
+
+        <!-- For test only 测试状态通知栏，需要打开的Activity -->
+        <activity
+            android:name="com.shows.notifacation.TestActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="jpush.testAction" />
+
+                <category android:name="jpush.testCategory" />
+            </intent-filter>
+        </activity>
+        <!-- Rich push 核心功能 since 2.0.6 -->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:exported="false"
+            android:theme="@style/MyDialogStyle" />
+
+        <!-- Required SDK核心功能 -->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.yixinke.shows" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService" />
+
+                <category android:name="com.yixinke.shows" />
+            </intent-filter>
+        </service>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />
+                <!-- Required  显示通知栏 -->
+                <category android:name="com.yixinke.shows" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false" />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.shows.notifacation.MyReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK" />
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="com.yixinke.shows" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default" />
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="120c4ae563c23cb694a19061" />
+        <!-- </>值来自开发者平台取得的AppKey -->
+
+        <activity android:name="com.shows.notifacation.NocatifactionActivty" />
+        <activity
+            android:name="com.shows.photos.ImageBucketChooseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.shows.photos.ImageChooseActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.shows.photos.PublishActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.shows.photos.ImageZoomActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <activity
+            android:name="com.shows.allactivty.MyMoneyActiviity"
+            android:launchMode="singleTop" />
+        <activity android:name="com.shows.allactivty.CollectionActiviity" />
+        <activity android:name="com.shows.moneychildactivity.RechargeActivity" />
+        <activity android:name="com.shows.typeinfoallcativity.TypeInfoActivity" />
+        <activity android:name="com.shows.allactivty.ExchangeGoodActivity" />
+        <activity android:name="com.shows.allactivty.FeedbackActivity" />
+        <activity android:name="com.shows.moneychildactivity.OutMoneyToYouActivity" />
+        <activity android:name="com.shows.allactivty.PhoneAndPassLogiActivtyn" />
+        <activity android:name="com.shows.notifacation.NocatifactionDetail" />
+        <activity
+            android:name="com.shows.allactivty.ChooseLoginActivty"
+            android:launchMode="singleTop" />
+        <activity android:name="com.shows.allactivty.UserDetailActivity" />
+        <activity android:name="com.shows.allactivty.RankingActivity" />
+        <activity android:name="com.shows.allactivty.ChangeHeadActivity" />
+        <activity
+            android:name="com.shows.allactivty.SelectPicPopupWindow"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity android:name="com.shows.allactivty.BussRecommendActivity" />
+        <activity android:name="com.shows.moneychildactivity.OutMoneyActivity" />
+        <activity android:name="com.shows.allactivty.MyOrderActiviity" />
+        <activity android:name="com.shows.allactivty.MyReleaseActiviity" />
+        <activity android:name="com.shows.view.GalleryActivity" />
+        <activity android:name="com.shows.allactivty.ViewPagerClickActivity" />
+        <activity android:name="com.shows.allactivty.XiuCommActivity" />
+        <activity android:name="com.shows.allactivty.FreeAndVersionActivity" />
+        <activity android:name="com.shows.allactivty.ShoperInfoActivity" />
+        <activity android:name="com.shows.allactivty.ExchangeGoodDetailActivty" />
+        <activity android:name="com.shows.allactivty.AddAddressActivty" />
+        <activity android:name="com.shows.view.BaseActivity" />
+        <activity android:name="com.shows.allactivty.AddressListViewActivty" />
+        <activity android:name="com.shows.allactivty.OrderInfoDetailActivity" />
+        <activity android:name="com.shows.allactivty.LimitedActivity" />
+        <activity android:name="com.shows.allactivty.ForgetPassActivity" />
+        <activity android:name="com.shows.allactivty.ForgetPassConfimActivity" />
+        <activity
+            android:name="com.shows.zxing.test.ZxingMainActivity"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity android:name="com.shows.allactivty.BuyCodeHistoryActivity" />
+        <activity
+            android:name="com.shows.getmoney.hanzicode.CodePassActivity"
+            android:theme="@style/dialog" />
+        <activity android:name="com.shows.typeinfoallcativity.CommendsListActivity" />
+        <activity android:name="com.shows.allactivty.CrowdfundingActivity" />
+        <activity android:name="com.shows.allactivty.MyCrowFundingActivity" />
+        <activity android:name="com.shows.allactivty.CFAllCodeActivity" />
+        <activity android:name=".VideoInfoDetailActivity"></activity>
+        <activity android:name="com.shows.allactivty.SurfaceViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            android:launchMode="singleTop" ></activity>
+        <activity android:name="com.shows.allactivty.CrowFundAddressListViewActivty"
+            android:launchMode="singleTop"></activity>
+    </application>
+
+</manifest>

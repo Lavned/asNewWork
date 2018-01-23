@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@mipmap/yinbeijing"
+        android:scaleType="fitXY"
+        android:id="@+id/videobackground"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:src="@drawable/player"
+        android:scaleType="fitXY"
+        android:id="@+id/videohead"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

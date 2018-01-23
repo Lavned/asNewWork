@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:locale="en">
+    <string-array name="city">
+        <item>甘肃省</item>
+    </string-array>
+
+    <string-array name="pro">
+        <item>兰州市</item>
+    </string-array>
+    <string-array name="ages">
+        <item>20岁以下</item>
+        <item>20岁—30岁</item>
+        <item>30岁—40岁</item>
+        <item>40岁以上</item>
+
+    </string-array>
+    <string-array name="type">
+        <item>房产</item>
+        <item>二手车</item>
+        <item>求职</item>
+        <item>中介</item>
+    </string-array>
+    <string-array name="zhongchou">
+        <item>秀秀众筹</item>
+        <item>商品</item>
+    </string-array>
+
+    <string-array name="shiwu">
+        <item>全部</item>
+        <item>实物商品</item>
+    </string-array>
+
+    <string-array name="infotype">
+        <item>房产信息</item>
+        <item>二手交易</item>
+        <item>招聘信息</item>
+        <item>求职信息</item>
+        <item>餐饮娱乐</item>
+        <item>相亲交友</item>
+        <item>寻人寻物</item>
+        <item>教育培训</item>
+    </string-array>
+</resources>

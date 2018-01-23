@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JYShop/JYShop.iml" filepath="$PROJECT_DIR$/JYShop/JYShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asNewWork.iml" filepath="$PROJECT_DIR$/asNewWork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/changeDemo/changeTest.iml" filepath="$PROJECT_DIR$/changeDemo/changeTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/librar.iml" filepath="$PROJECT_DIR$/library/librar.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pass_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册验证"
+        android:gravity="center"
+        android:background="#D6D7D7"
+        android:textSize="20sp"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/login_input_phone_et"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:padding="10dp"
+        android:background="@drawable/searchback"
+        android:ems="10"
+        android:hint="请输入手机号"
+        android:inputType="phone" />
+
+    <requestFocus />
+
+    <EditText
+        android:id="@+id/login_input_code_et"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/searchback"
+        android:hint="请输入验证码"
+        android:layout_below="@+id/login_request_code_btn"
+        android:layout_alignStart="@+id/login_input_phone_et">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ff0000"
+        android:textSize="12sp"
+        android:text="请点击获取验证码后等30秒，30秒后若没有收到信息即可获取语音验证码；\n输入的验证码必须是最后一次收到的验证信息或者语音验证码。否则验证将不通过。"
+        android:layout_below="@+id/login_input_code_et"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:id="@+id/login_request_code_btn"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="获取验证码"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/login_input_phone_et"
+        android:layout_alignStart="@+id/login_input_code_et" />
+
+    <Button
+        android:id="@+id/yuyin"
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:text="没有收到验证码？试试语音验证"
+        android:background="#27a0fc"
+        android:textColor="#fff"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/login_input_code_et" />
+
+
+    <Button
+        android:id="@+id/login_commit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="提交验证"
+        android:background="#27a0fc"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

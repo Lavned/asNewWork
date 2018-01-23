@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/reaaadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2FB1EB">
+
+        <ImageView
+            android:id="@+id/address_lv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_btn_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="收货地址"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address_list"
+        android:layout_below="@+id/reaaadd"></ListView>
+    <TextView
+        android:id="@+id/wawa_weiqu"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/weiqu"
+        android:drawablePadding="5dp"
+        android:text=""
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:id="@+id/add_address_button"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:text="增加地址"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="#4b82ef"/>
+
+</RelativeLayout>

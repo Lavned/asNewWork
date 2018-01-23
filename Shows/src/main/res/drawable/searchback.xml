@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 圆角 -->
+    <!--<corners-->
+        <!--android:topLeftRadius="5dp"-->
+        <!--android:topRightRadius="5dp"-->
+        <!--android:bottomLeftRadius="5dp"-->
+        <!--android:bottomRightRadius="5dp"/>&lt;!&ndash; 设置圆角半径 &ndash;&gt;-->
+
+
+    <!--&lt;!&ndash; 大小 &ndash;&gt;-->
+    <!--<size-->
+        <!--android:width="20dp"-->
+        <!--android:height="10dp"/>&lt;!&ndash; 宽度和高度 &ndash;&gt;-->
+
+    <!--&lt;!&ndash; 填充 &ndash;&gt;-->
+    <!--<solid-->
+        <!--android:color="#ffffff"/>-->
+
+    <solid android:color="#fff"/>
+    <padding android:top="5px"
+        android:bottom="5px"/>
+    <corners android:radius="15px"/>
+    <stroke android:width="0.5dp" android:color="#8E8E8E"/>
+
+</shape>

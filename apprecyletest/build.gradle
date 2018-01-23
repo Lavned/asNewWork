@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        applicationId "com.expect.zbjpulltorefresht"
+        minSdkVersion 18
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/support-v4-23.1.1.jar')
+    compile files('libs/internal_impl-23.1.1.jar')
+    compile(name:'recyclerview-v7-23.1.1', ext:'aar')
+}
